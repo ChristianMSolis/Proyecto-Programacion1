@@ -1,0 +1,2 @@
+Se inician con las pruebas para la sincronizacion con Git y CodeBlocks para el proyecto de programacion
+Fecha 22032024
