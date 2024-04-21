@@ -3,10 +3,8 @@
 using namespace std;
 
 int main(){
-    int opcion,bt, i, j,bc;
+    int opcion,bt, i, j,bc, radio, y, x;
     const float PI = 3.141516;
-    float radio, volumen;
-
     do
 
 {
@@ -26,10 +24,10 @@ int main(){
                 cin >> bt;
                 for (i=1; i<=bt; i++){
 
-                    for (j=1; j<bt-i; j++){
+                    for (j=1; j<=bt-i; j++){
                         cout << " ";
                     }
-                    for (j=1; j<=i; j++)
+                    for (j=1; j<=2*i-1; j++)
                     {
                     cout << "*";
                 }
@@ -62,8 +60,16 @@ int main(){
                 cout << "Ingrese el radio del circulo" << endl;
                 cout << "\n" << endl;
                 cin >> radio;
-                //volumen = 4.0/3*PI*pow(radio,3);
-                cout << "" << endl;
+                for (y =-radio; y<=radio; y++){
+                    for (x = -radio; x<=radio; x++){
+                        if (x*x + y*y <=radio*radio){
+                            cout <<"* ";
+                                }else {
+                                    cout <<" ";
+                                }
+                            }
+                    cout << endl;
+                }
                 break;
             case 5:
                 cout << "Saliendo del programa." << endl;
