@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    int opcion,bt;
+    int opcion,bt, i, j,bc;
     const float PI = 3.141516;
     float radio, volumen;
 
@@ -24,16 +24,35 @@ int main(){
                 cout << "Ingrese la base del Triangulo" << endl;
                 cout << "\n";
                 cin >> bt;
-                for (int i=1; i<=bt; i++){
-                    for (int j=1; j<=i; j++){
-                        cout << "*";
+                for (i=1; i<=bt; i++){
+
+                    for (j=1; j<bt-i; j++){
+                        cout << " ";
                     }
+                    for (j=1; j<=i; j++)
+                    {
+                    cout << "*";
+                }
                     cout << endl;
                 }
                 break;
             case 2:
-                cout << "" << endl;
+                cout << "Ingrese el Tamaño del Cuadrado" << endl;
                 cout << "\n" << endl;
+                cin >> bc;
+                for (i=0; i<bc; i++){
+                    for(j=0; j<bc; j++)
+                    {
+                        if ((i==0)||(j==0)||(i==bc-1)||(j==bc-1))
+                        {
+                            cout<<"*";
+                        }
+                        else{
+                            cout<<" ";
+                        }
+                    }
+                    cout<<"\n";
+                }
                 break;
             case 3:
                 cout << "" << endl;

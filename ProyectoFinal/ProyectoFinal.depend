@@ -1,8 +1,6 @@
 # depslib dependency file v1.0
-1712127637 source:c:\users\student\desktop\2024\data\proyecto2024\proyecto-programacion1\proyectofinal\main.cpp
+1713736841 source:c:\users\student\desktop\2024\data\proyecto2024\proyecto-programacion1\proyectofinal\main.cpp
 	<iostream>
-	"graphics.h"
-	<conio.h>
 
 1557858377 c:\users\student\desktop\2024\data\proyecto2024\proyecto-programacion1\proyectofinal\graphics.h
 	<windows.h>
