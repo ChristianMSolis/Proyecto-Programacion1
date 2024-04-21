@@ -3,7 +3,10 @@
 using namespace std;
 
 int main(){
-    int opcion;
+    int opcion,bt;
+    const float PI = 3.141516;
+    float radio, volumen;
+
     do
 
 {
@@ -18,8 +21,15 @@ int main(){
         cin >> opcion;
         switch (opcion) {
             case 1:
-                cout << "" << endl;
+                cout << "Ingrese la base del Triangulo" << endl;
                 cout << "\n";
+                cin >> bt;
+                for (int i=1; i<=bt; i++){
+                    for (int j=1; j<=i; j++){
+                        cout << "*";
+                    }
+                    cout << endl;
+                }
                 break;
             case 2:
                 cout << "" << endl;
@@ -30,8 +40,11 @@ int main(){
                 cout << "\n" << endl;
                 break;
             case 4:
-                cout << "" << endl;
+                cout << "Ingrese el radio del circulo" << endl;
                 cout << "\n" << endl;
+                cin >> radio;
+                //volumen = 4.0/3*PI*pow(radio,3);
+                cout << "" << endl;
                 break;
             case 5:
                 cout << "Saliendo del programa." << endl;
