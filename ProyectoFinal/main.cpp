@@ -58,7 +58,8 @@ int main(){
                 cout << "Ingrese el Alto del Rectangulo" << endl;
                 cin >> alto;
                 for (i=1; i<=ancho; i++){
-                    cout<<"*"
+                    cout<<"*";
+                    }
                     for(i=2; i<alto; i++){
                         cout<<"\n*";
                         for(lib =2; lib<ancho; lib++){
@@ -66,16 +67,14 @@ int main(){
                         }
                         cout<<"*";
                     }
-                    cout<<"*";
+                    cout<<"\n";
                     for(i=1; i<=ancho; i++){
                         cout<<"*";
                     }
-                }
-                cout << "\n" << endl;
                 break;
             case 4:
                 cout << "Ingrese el radio del circulo" << endl;
-                cout << "\n" << endl;
+                cout << "\n";
                 cin >> radio;
                 for (y =-radio; y<=radio; y++){
                     for (x = -radio; x<=radio; x++){
@@ -85,7 +84,7 @@ int main(){
                                     cout <<" ";
                                 }
                             }
-                    cout << endl;
+                    cout << "\n";
                 }
                 break;
             case 5:
