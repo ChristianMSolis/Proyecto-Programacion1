@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    int opcion,bt, i, j,bc, radio, y, x;
+    int opcion,bt, i, j,bc, radio, y, x, ancho, alto, lib;
     const float PI = 3.141516;
     do
 
@@ -53,7 +53,24 @@ int main(){
                 }
                 break;
             case 3:
-                cout << "" << endl;
+                cout << "Ingrese el Ancho del Rectangulo" << endl;
+                cin >> ancho;
+                cout << "Ingrese el Alto del Rectangulo" << endl;
+                cin >> alto;
+                for (i=1; i<=ancho; i++){
+                    cout<<"*"
+                    for(i=2; i<alto; i++){
+                        cout<<"\n*";
+                        for(lib =2; lib<ancho; lib++){
+                            cout<<" ";
+                        }
+                        cout<<"*";
+                    }
+                    cout<<"*";
+                    for(i=1; i<=ancho; i++){
+                        cout<<"*";
+                    }
+                }
                 cout << "\n" << endl;
                 break;
             case 4:
