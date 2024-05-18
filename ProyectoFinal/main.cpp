@@ -22,21 +22,24 @@ int main(){
                 cout << "Ingrese la base del Triangulo" << endl;
                 cout << "\n";
                 cin >> bt;
-                for (i=1; i<=bt; i++){
-
-                    for (j=1; j<=bt-i; j++){
+                for (int i=0; i < bt; i++){
+                    for (int j=0; j< bt -i -1; j++){
                         cout << " ";
                     }
-                    for (j=1; j<=2*i-1; j++)
-                    {
+                for (int j = 0; j < 2 * i + 1; j++) {
+                    if (j == 0 || j == 2 * i || i == bt - 1) {
                     cout << "*";
+                } else {
+                    cout << " ";
+                    }
                 }
-                    cout << endl;
-                }
+                cout << endl;
+            }
+
                 break;
             case 2:
-                cout << "Ingrese el Tamaño del Cuadrado" << endl;
-                cout << "\n" << endl;
+                cout << "Ingrese el Tamanio del Cuadrado" << endl;
+                cout << "\n";
                 cin >> bc;
                 for (i=0; i<bc; i++){
                     for(j=0; j<bc; j++)
@@ -54,8 +57,10 @@ int main(){
                 break;
             case 3:
                 cout << "Ingrese el Ancho del Rectangulo" << endl;
+                cout << "\n";
                 cin >> ancho;
                 cout << "Ingrese el Alto del Rectangulo" << endl;
+                cout << "\n";
                 cin >> alto;
                 for (i=1; i<=ancho; i++){
                     cout<<"*";
